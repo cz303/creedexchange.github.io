@@ -2,7 +2,7 @@
 
 
 # Creedexchange
-"https://creedexchange.github.io/images/td_logo.png" />
+https://creedexchange.github.io/images/td_logo.png
 
 
 Creedexchange is a decentralized Ethereum Token Exchange with the most ERC20 listings of any exchange.
