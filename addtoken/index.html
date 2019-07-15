@@ -1,258 +1,258 @@
-< html >
-	< cabeça >
+<html>
+	<head>
 		
 		
-		< title > Sobre o TokenDEX | Roteiro, FAQs e muito mais! </ Title >
-		< meta  name = " description "  content = " O Mercado de Token P2P Descentralizado com mais Tokens ERC20 listados do que qualquer outra troca. " />
+		<title>About TokenDEX | Roadmap, FAQs, and more!</title>
+		<meta name="description" content="The Decentralized P2P Token Market with more ERC20 Tokens listed than any other exchange." />
 		
-		< meta  property = " og: url "  conteúdo = " https://tokendex.github.io " />
-	    < meta  property = " og: title "  content = " Sobre o TokenDEX | Roteiros, FAQs e mais! " />
-	    < meta  property = " og: description "  content = " O Mercado de Token P2P Descentralizado com mais Tokens ERC20 listados do que qualquer outra troca. " />
-	    < meta  property = " og: imagem "  content = " https://tokendex.github.io/images/td_logo.png " />
-		< link  href = " /images/td_favicon.png "  rel = " ícone " />
+		<meta property="og:url" content="https://tokendex.github.io" />
+	    <meta property="og:title" content="About TokenDEX | Roadmaps, FAQs, and more!" />
+	    <meta property="og:description" content="The Decentralized P2P Token Market with more ERC20 Tokens listed than any other exchange." />
+	    <meta property="og:image" content="https://tokendex.github.io/images/td_logo.png" />
+		<link href="/images/td_favicon.png" rel="icon" />
 
-		< link  type = " text / css "  rel = " folha de estilo "  href = " https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css " />
-		< script  src = " https://code.jquery.com/jquery-3.3.1.min.js "
-				integrity = " sha256-FgpCb / KJQlLNfOu91ta32o / NMZxltwRo8QtmkMRdAu8 = "
-				crossorigin = " anônimo " > </ script >
+		<link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+				integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+				crossorigin="anonymous"></script>
 
-		< script >
+		<script>
 			
-			$ ( documento ). pronto ( função ( $ ) {
-				// se a página for carregada com um hash, desloque-a suavemente
-				if ( janela . localização . hash  ! ==  ' ' ) {
-					scroll_to_hash ( janela . localização . Hash );
+			$(document).ready(function($) {
+				//if page loaded with a hash, smooth scroll to it
+				if (window.location.hash !== '') {
+					scroll_to_hash(window.location.hash);
 				}
-				// ligar acordeão
-				$ ( ' #faqs ' ). find ( ' .accordion-toggle ' ). clique ( function () {
-					// Expandir ou recolher este painel
-					$ ( isso ). next (). slideToggle ( ' rápido ' );
-					// Esconda os outros painéis
-					$ ( " conteúdo de acordeão " ). não ( $ ( this ). next ()). slideUp ( ' rápido ' );
+				//bind accordion
+				$('#faqs').find('.accordion-toggle').click(function(){
+					//Expand or collapse this panel
+					$(this).next().slideToggle('fast');
+					//Hide the other panels
+					$(".accordion-content").not($(this).next()).slideUp('fast');
 				});
-				// Adicionar rolagem suave aos links de navegação
-				$ ( " a.hash " ). on ( ' click ' , function ( event ) {
-					evento . preventDefault ();
-					scroll_to_hash ( isso . hash );
-					janela . localização . hash  =  isso . hash ;
+				// Add smooth scrolling to nav links
+				$("a.hash").on('click', function(event) {
+					event.preventDefault();
+					scroll_to_hash(this.hash);
+					window.location.hash = this.hash;
 				});
 			});
-			função  scroll_to_hash ( hash ) {
-				if (hash ===  ' #roadmap ' ) {
-					var offsettop =  0 ;
-				} mais {
-					var offsettop =  $ ( ' a [nome = " '  + hash +  ' "] ' ). offset (). top ;
+			function scroll_to_hash(hash) {
+				if (hash === '#roadmap') {
+					var offsettop = 0;
+				} else {
+					var offsettop = $('a[name="' + hash + '"]').offset().top;
 				}
-				$ ( ' html, body ' ). animar ({
-					scrollTop : offset,
-				}, 1000 );
+				$('html, body').animate({
+					scrollTop: offsettop,
+				}, 1000);
 			}
-		</ script >
+		</script>
 
-		< style >
+		<style>
 			* {
-				caixa-sizing : border-box ;
+				box-sizing: border-box;
 			}
-			corpo {
-				fundo : # 1e2b34 ;
-				font-family : Segoe UI;
-				preenchimento : 70 px  0 ;
+			body {
+				background: #1e2b34;
+				font-family: Segoe UI;
+				padding: 70px 0;
 			}
 			
 			
 			h1 {
-			  texto-alinhar : esquerda ;
-			  tamanho da fonte : 22 px ;
-			  font-weight : 2,8 rem ;
-			  cor : # 0067d9 ;
-			  margem inferior : 20 px ;
+			  text-align: left;
+			  font-size: 22px;
+			  font-weight: 2.8rem;
+			  color: #0067d9;
+			  margin-bottom: 20px;
 			}
 			h2 {
-				texto-alinhar : esquerda ;
-				tamanho da fonte : 18 px ;
-				font-weight : negrito ;
+				text-align: left;
+				font-size: 18px;
+				font-weight: bold;
 				
 			}
 			
 			h3 {
-				texto-alinhar : esquerda ;
-				tamanho da fonte : 16 px ;
-				font-weight : negrito ;
+				text-align: left;
+				font-size: 16px;
+				font-weight: bold;
 				
 			}
 			
 			h4 {
-			  texto-alinhar : centro ;
-			  tamanho da fonte : 20 px ;
-			  font-weight : 200 ;
-			  cor : # 0067d9 ;
-			  margem inferior : 20 px ;
+			  text-align: center;
+			  font-size: 20px;
+			  font-weight: 200;
+			  color: #0067d9;
+			  margin-bottom: 20px;
 			}
 			a {
-				text-decoration : nenhum ;
+				text-decoration: none;
 			}
 			
 			img {
-				largura : 100 % ;
+				width: 100%;
 			}
 			.header {
-			    posição : fixa ;
-			    top : 0 ;
-			    esquerda : 0 ;
-			    largura : 100 % ;
-			    texto-alinhar : centro ;
-			    / * position: relative; * /
-			    índice z : 9 ;
-			    fundo : #FFF ;
-			    box-shadow : 0 px  1 px  22 px  4 px  rgba ( 0 , 0 , 0 , 0,07 );
+			    position: fixed;
+			    top: 0;
+			    left: 0;
+			    width: 100%;
+			    text-align: center;
+			    /* position: relative; */
+			    z-index: 9;
+			    background: #FFF;
+			    box-shadow: 0px 1px 22px 4px rgba(0, 0, 0, 0.07);
 			}
-			.header  a {
-			    preenchimento : 20 px  30 px ;
-			    display : bloco inline ;
-			    text-decoration : nenhum ;
-			    tamanho da fonte : 16 px ;
-                            font-weight : negrito ;
-                            cor : # 394b59 ;
+			.header a {
+			    padding: 20px 30px;
+			    display: inline-block;
+			    text-decoration: none;
+			    font-size: 16px;
+                            font-weight: bold;
+                            color: #394b59;
 			}
-			.header  a : hover {
-				cor : # 0067d9 ;
+			.header a:hover {
+				color: #0067d9;
 			}
 			.content {
-				largura : 1000 px ;
-				margem : 0  auto ;
-				borda : 0 px  sólido  # E0E0E0 ;
-				preenchimento : 12 px ;
-				cor : # f1f1f1 ;
-				fundo : # 1e2b34 ;
-				tamanho da fonte : 15 px ;
-				altura da linha : 1,45 em ;
-				box-shadow : 0 px  0 px  0 px  0 px  rgba ( 0 , 0 , 0 , 0,07 );
+				width: 1000px;
+				margin: 0 auto;
+				border:0px solid #E0E0E0;
+				padding:12px;
+				color:#f1f1f1;
+				background:#1e2b34;
+				font-size:15px;
+				line-height:1.45em;
+				box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.07);
 			}
-			/ * acordeão css * /
+			/* accordion css */
 			#faqs {
-				largura : 1000 px ;
-				box-shadow : 0 px  1 px  22 px  4 px  rgba ( 0 , 0 , 0 , 0,07 );
-				margem : 0  auto ;
+				width: 1000px;
+				box-shadow: 0px 1px 22px 4px rgba(0, 0, 0, 0.07);
+				margin: 0 auto;
 			}
-			.corda de alternância ,
-			.concordion-content {
-				largura : 100 % ;
-				margem : 0  auto ;
+			.accordion-toggle,
+			.accordion-content {
+				width: 100%;
+				margin: 0 auto;
 			}
 			.accordion-toggle {
-				cursor : ponteiro ;
-				fundo : # 394b59 ;
-				preenchimento : 12 px ;
-				cursor : ponteiro ;
-				borda direita : 1 px  sólido  # 2d3d4a ;
-				borda esquerda : 1 px  sólido  # 2d3d4a ;
-				borda inferior : 1 px  sólido  # 2d3d4a ;
-				min-height : 20 px ;
-				transição : 0,25 s ;
-				tamanho da fonte : 18 px ;
-				font-weight : normal ;
-				altura da linha : 1,3 em ;
-				cor : #ffffff ;
+				cursor: pointer;
+				background:#394b59;
+				padding:12px;
+				cursor:pointer;
+				border-right:1px solid #2d3d4a;
+				border-left:1px solid #2d3d4a;
+				border-bottom:1px solid #2d3d4a;
+				min-height:20px;
+				transition:.25s;
+				font-size:18px;
+				font-weight: normal;
+				line-height: 1.3em;
+				color:#ffffff;
 			}
-			.concordion-content {
-				exibir : nenhum ;
-				borda esquerda : 1 px  sólido  # E0E0E0 ;
-				borda direita : 1 px  sólido  # E0E0E0 ;
-				borda inferior : 1 px  sólido  # E0E0E0 ;
-				preenchimento : 12 px ;
-				cor : # 212121 ;
-				fundo : #FFF ;
-				tamanho da fonte : 15 px ;
-				altura da linha : 1,45 em ;
+			.accordion-content {
+				display: none;
+				border-left:1px solid #E0E0E0;
+				border-right:1px solid #E0E0E0;
+				border-bottom:1px solid #E0E0E0;
+				padding:12px;
+				color:#212121;
+				background:#FFF;
+				font-size:15px;
+				line-height:1.45em;
 			}
-			.accordion-content.open { display : bloco ; }
-			/ * timeline css * /
-			.timeline  .demo-card-wrapper {
-			  posição : relativa ;
-			  margem : auto ;
+			.accordion-content.open { display: block; }
+			/* timeline css */
+			.timeline .demo-card-wrapper {
+			  position: relative;
+			  margin: auto;
 			}
-			.timeline  .demo-card-wrapper :: after {
-			  z-index : 1 ;
-			  conteúdo : " " ;
-			  posição : absoluta ;
-			  top : 0 ;
-			  fundo : 0 ;
-			  esquerda : 50 % ;
-			  borda esquerda : 1 px  rgba sólido  ( 191 , 191 , 191 , 0,4 );
+			.timeline .demo-card-wrapper::after {
+			  z-index: 1;
+			  content: "";
+			  position: absolute;
+			  top: 0;
+			  bottom: 0;
+			  left: 50%;
+			  border-left: 1px solid rgba(191, 191, 191, 0.4);
 			}
-			.timeline  .demo-card {
-			  posição : relativa ;
-			  display : bloco ;
-			  margem : 10 px  auto ;
-			  índice z : 2 ;
-			  largura máxima : 1000 px ;
-			  box-shadow : 0 px  1 px  22 px  4 px  rgba ( 0 , 0 , 0 , 0,07 );
+			.timeline .demo-card {
+			  position: relative;
+			  display: block;
+			  margin: 10px auto;
+			  z-index: 2;
+			  max-width: 1000px;
+			  box-shadow: 0px 1px 22px 4px rgba(0, 0, 0, 0.07);
 			}
-			.timeline  .demo-card  .head {
-			  posição : relativa ;
-			  exibição : flex ;
-			  itens de alinhamento : centro ;
-			  cor : #fff ;
-			  font-weight : 400 ;
+			.timeline .demo-card .head {
+			  position: relative;
+			  display: flex;
+			  align-items: center;
+			  color: #fff;
+			  font-weight: 400;
 			}
-			.timeline  .demo-card  .head  .number-box {
-			  display : inline ;
-			  flutuar : esquerda ;
-			  margem : 15 px ;
-			  preenchimento : 10 px ;
-			  tamanho da fonte : 35 px ;
-			  altura da linha : 35 px ;
-			  font-weight : 600 ;
-			  fundo : rgba ( 0 , 0 , 0 , 0,17 );
+			.timeline .demo-card .head .number-box {
+			  display: inline;
+			  float: left;
+			  margin: 15px;
+			  padding: 10px;
+			  font-size: 35px;
+			  line-height: 35px;
+			  font-weight: 600;
+			  background: rgba(0, 0, 0, 0.17);
 			}
-			.timeline  .demo-card  .head  h2 {
-			  tamanho da fonte : 24 px ;
-			  font-weight : herdar ;
-			  espaçamento entre letras : 2 px ;
-			  margem : 0 ;
-			  fundo de preenchimento : 6 px ;
-			  altura da linha : 26 px ;
-			  texto-alinhar : esquerda ;
+			.timeline .demo-card .head h2 {
+			  font-size: 24px;
+			  font-weight: inherit;
+			  letter-spacing: 2px;
+			  margin: 0;
+			  padding-bottom: 6px;
+			  line-height: 26px;
+			  text-align: left;
 			}
-			.timeline  .demo-card  .head  h2  span {
-			  display : bloco ;
-			  tamanho da fonte : 18 px ;
-			  text-transform : maiúscula ;
-			  margem : 0 ;
+			.timeline .demo-card .head h2 span {
+			  display: block;
+			  font-size: 18px;
+			  text-transform: uppercase;
+			  margin: 0;
 			}
-			@media ( min-width : 480 px ) {
-			  .timeline  .demo-card  .head  h2  span {
-			    tamanho da fonte : 0,8 rem ;
+			@media (min-width: 480px) {
+			  .timeline .demo-card .head h2 span {
+			    font-size: 0.8rem;
 			  }
 			}
-			.timeline  .demo-card {
-				fundo : # 394b59 ;
+			.timeline .demo-card {
+				background: #394b59;
 			}
-			.timeline  .demo-card.green {
-				fundo : # 77DD77 ;
+			.timeline .demo-card.green {
+				background: #77DD77;
 			}
-		</ style >
-	</ head >
+		</style>
+	</head>
 
-	< body >
+	<body>
 		
-		< div  class = " header " >
+		<div class="header">
 
-			< A  href = " https://tokendex.github.io " > Troca </ a >
-			< A  href = " / addtoken / " > Adicionar token </ a >
-			< A  href = " / conversor / " > Conversor </ a >
-			< A  href = " / faqs / " > FAQs </ a >
+			<a href="https://tokendex.github.io">Exchange</a>
+			<a href="/addtoken/">Add Token</a>
+			<a href="/converter/">Converter</a>
+			<a href="/faqs/">FAQs</a>
 			
-		</ div >
+		</div>
 		
 		
 
-< div  class = " content " > < h2 > < iframe  src = " https://docs.google.com/forms/d/e/1FAIpQLSfYCMm8EOQchH67qzVAX8JVFDiakkYbfl4-yApRCQl6tnlBSA/viewform?embedded=true "  width = " 1000 "  height = " 2100 "  frameborder = " 0 "  marginheight = " 0 "  marginwidth = " 0 " > Carregando ... </ iframe > </ h2 >
-</ div >
+<div class="content"><h2><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfYCMm8EOQchH67qzVAX8JVFDiakkYbfl4-yApRCQl6tnlBSA/viewform?embedded=true" width="1000" height="2100" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe></h2>
+</div>
 		
 		
 		
 		
 		
-	</ body >
-</ html >
+	</body>
+</html>
