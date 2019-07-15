@@ -1,0 +1,258 @@
+< html >
+	< cabeça >
+		
+		
+		< title > Sobre o TokenDEX | Roteiro, FAQs e muito mais! </ Title >
+		< meta  name = " description "  content = " O Mercado de Token P2P Descentralizado com mais Tokens ERC20 listados do que qualquer outra troca. " />
+		
+		< meta  property = " og: url "  conteúdo = " https://tokendex.github.io " />
+	    < meta  property = " og: title "  content = " Sobre o TokenDEX | Roteiros, FAQs e mais! " />
+	    < meta  property = " og: description "  content = " O Mercado de Token P2P Descentralizado com mais Tokens ERC20 listados do que qualquer outra troca. " />
+	    < meta  property = " og: imagem "  content = " https://tokendex.github.io/images/td_logo.png " />
+		< link  href = " /images/td_favicon.png "  rel = " ícone " />
+
+		< link  type = " text / css "  rel = " folha de estilo "  href = " https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css " />
+		< script  src = " https://code.jquery.com/jquery-3.3.1.min.js "
+				integrity = " sha256-FgpCb / KJQlLNfOu91ta32o / NMZxltwRo8QtmkMRdAu8 = "
+				crossorigin = " anônimo " > </ script >
+
+		< script >
+			
+			$ ( documento ). pronto ( função ( $ ) {
+				// se a página for carregada com um hash, desloque-a suavemente
+				if ( janela . localização . hash  ! ==  ' ' ) {
+					scroll_to_hash ( janela . localização . Hash );
+				}
+				// ligar acordeão
+				$ ( ' #faqs ' ). find ( ' .accordion-toggle ' ). clique ( function () {
+					// Expandir ou recolher este painel
+					$ ( isso ). next (). slideToggle ( ' rápido ' );
+					// Esconda os outros painéis
+					$ ( " conteúdo de acordeão " ). não ( $ ( this ). next ()). slideUp ( ' rápido ' );
+				});
+				// Adicionar rolagem suave aos links de navegação
+				$ ( " a.hash " ). on ( ' click ' , function ( event ) {
+					evento . preventDefault ();
+					scroll_to_hash ( isso . hash );
+					janela . localização . hash  =  isso . hash ;
+				});
+			});
+			função  scroll_to_hash ( hash ) {
+				if (hash ===  ' #roadmap ' ) {
+					var offsettop =  0 ;
+				} mais {
+					var offsettop =  $ ( ' a [nome = " '  + hash +  ' "] ' ). offset (). top ;
+				}
+				$ ( ' html, body ' ). animar ({
+					scrollTop : offset,
+				}, 1000 );
+			}
+		</ script >
+
+		< style >
+			* {
+				caixa-sizing : border-box ;
+			}
+			corpo {
+				fundo : # 1e2b34 ;
+				font-family : Segoe UI;
+				preenchimento : 70 px  0 ;
+			}
+			
+			
+			h1 {
+			  texto-alinhar : esquerda ;
+			  tamanho da fonte : 22 px ;
+			  font-weight : 2,8 rem ;
+			  cor : # 0067d9 ;
+			  margem inferior : 20 px ;
+			}
+			h2 {
+				texto-alinhar : esquerda ;
+				tamanho da fonte : 18 px ;
+				font-weight : negrito ;
+				
+			}
+			
+			h3 {
+				texto-alinhar : esquerda ;
+				tamanho da fonte : 16 px ;
+				font-weight : negrito ;
+				
+			}
+			
+			h4 {
+			  texto-alinhar : centro ;
+			  tamanho da fonte : 20 px ;
+			  font-weight : 200 ;
+			  cor : # 0067d9 ;
+			  margem inferior : 20 px ;
+			}
+			a {
+				text-decoration : nenhum ;
+			}
+			
+			img {
+				largura : 100 % ;
+			}
+			.header {
+			    posição : fixa ;
+			    top : 0 ;
+			    esquerda : 0 ;
+			    largura : 100 % ;
+			    texto-alinhar : centro ;
+			    / * position: relative; * /
+			    índice z : 9 ;
+			    fundo : #FFF ;
+			    box-shadow : 0 px  1 px  22 px  4 px  rgba ( 0 , 0 , 0 , 0,07 );
+			}
+			.header  a {
+			    preenchimento : 20 px  30 px ;
+			    display : bloco inline ;
+			    text-decoration : nenhum ;
+			    tamanho da fonte : 16 px ;
+                            font-weight : negrito ;
+                            cor : # 394b59 ;
+			}
+			.header  a : hover {
+				cor : # 0067d9 ;
+			}
+			.content {
+				largura : 1000 px ;
+				margem : 0  auto ;
+				borda : 0 px  sólido  # E0E0E0 ;
+				preenchimento : 12 px ;
+				cor : # f1f1f1 ;
+				fundo : # 1e2b34 ;
+				tamanho da fonte : 15 px ;
+				altura da linha : 1,45 em ;
+				box-shadow : 0 px  0 px  0 px  0 px  rgba ( 0 , 0 , 0 , 0,07 );
+			}
+			/ * acordeão css * /
+			#faqs {
+				largura : 1000 px ;
+				box-shadow : 0 px  1 px  22 px  4 px  rgba ( 0 , 0 , 0 , 0,07 );
+				margem : 0  auto ;
+			}
+			.corda de alternância ,
+			.concordion-content {
+				largura : 100 % ;
+				margem : 0  auto ;
+			}
+			.accordion-toggle {
+				cursor : ponteiro ;
+				fundo : # 394b59 ;
+				preenchimento : 12 px ;
+				cursor : ponteiro ;
+				borda direita : 1 px  sólido  # 2d3d4a ;
+				borda esquerda : 1 px  sólido  # 2d3d4a ;
+				borda inferior : 1 px  sólido  # 2d3d4a ;
+				min-height : 20 px ;
+				transição : 0,25 s ;
+				tamanho da fonte : 18 px ;
+				font-weight : normal ;
+				altura da linha : 1,3 em ;
+				cor : #ffffff ;
+			}
+			.concordion-content {
+				exibir : nenhum ;
+				borda esquerda : 1 px  sólido  # E0E0E0 ;
+				borda direita : 1 px  sólido  # E0E0E0 ;
+				borda inferior : 1 px  sólido  # E0E0E0 ;
+				preenchimento : 12 px ;
+				cor : # 212121 ;
+				fundo : #FFF ;
+				tamanho da fonte : 15 px ;
+				altura da linha : 1,45 em ;
+			}
+			.accordion-content.open { display : bloco ; }
+			/ * timeline css * /
+			.timeline  .demo-card-wrapper {
+			  posição : relativa ;
+			  margem : auto ;
+			}
+			.timeline  .demo-card-wrapper :: after {
+			  z-index : 1 ;
+			  conteúdo : " " ;
+			  posição : absoluta ;
+			  top : 0 ;
+			  fundo : 0 ;
+			  esquerda : 50 % ;
+			  borda esquerda : 1 px  rgba sólido  ( 191 , 191 , 191 , 0,4 );
+			}
+			.timeline  .demo-card {
+			  posição : relativa ;
+			  display : bloco ;
+			  margem : 10 px  auto ;
+			  índice z : 2 ;
+			  largura máxima : 1000 px ;
+			  box-shadow : 0 px  1 px  22 px  4 px  rgba ( 0 , 0 , 0 , 0,07 );
+			}
+			.timeline  .demo-card  .head {
+			  posição : relativa ;
+			  exibição : flex ;
+			  itens de alinhamento : centro ;
+			  cor : #fff ;
+			  font-weight : 400 ;
+			}
+			.timeline  .demo-card  .head  .number-box {
+			  display : inline ;
+			  flutuar : esquerda ;
+			  margem : 15 px ;
+			  preenchimento : 10 px ;
+			  tamanho da fonte : 35 px ;
+			  altura da linha : 35 px ;
+			  font-weight : 600 ;
+			  fundo : rgba ( 0 , 0 , 0 , 0,17 );
+			}
+			.timeline  .demo-card  .head  h2 {
+			  tamanho da fonte : 24 px ;
+			  font-weight : herdar ;
+			  espaçamento entre letras : 2 px ;
+			  margem : 0 ;
+			  fundo de preenchimento : 6 px ;
+			  altura da linha : 26 px ;
+			  texto-alinhar : esquerda ;
+			}
+			.timeline  .demo-card  .head  h2  span {
+			  display : bloco ;
+			  tamanho da fonte : 18 px ;
+			  text-transform : maiúscula ;
+			  margem : 0 ;
+			}
+			@media ( min-width : 480 px ) {
+			  .timeline  .demo-card  .head  h2  span {
+			    tamanho da fonte : 0,8 rem ;
+			  }
+			}
+			.timeline  .demo-card {
+				fundo : # 394b59 ;
+			}
+			.timeline  .demo-card.green {
+				fundo : # 77DD77 ;
+			}
+		</ style >
+	</ head >
+
+	< body >
+		
+		< div  class = " header " >
+
+			< A  href = " https://tokendex.github.io " > Troca </ a >
+			< A  href = " / addtoken / " > Adicionar token </ a >
+			< A  href = " / conversor / " > Conversor </ a >
+			< A  href = " / faqs / " > FAQs </ a >
+			
+		</ div >
+		
+		
+
+< div  class = " content " > < h2 > < iframe  src = " https://docs.google.com/forms/d/e/1FAIpQLSfYCMm8EOQchH67qzVAX8JVFDiakkYbfl4-yApRCQl6tnlBSA/viewform?embedded=true "  width = " 1000 "  height = " 2100 "  frameborder = " 0 "  marginheight = " 0 "  marginwidth = " 0 " > Carregando ... </ iframe > </ h2 >
+</ div >
+		
+		
+		
+		
+		
+	</ body >
+</ html >
