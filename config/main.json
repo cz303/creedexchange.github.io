@@ -48,8 +48,9 @@
     { "addr": "0xd26114cd6ee289accf82350c8d8487fedb8a0c07", "name": "OMG", "fullName": "Token OmiseGO", "decimals": 18 },
     { "addr": "0x006bea43baa3f7a6f765f14f10a1a1b08334ef45", "name": "STX", "fullName": "Token Stox", "decimals": 18 },
     { "addr": "0x0e08b02d89ca66cf157c6658c02933ef0bc38cb6", "name": "VRBS", "fullName": "Viribustoken", "decimals": 18 },
-    { "addr": "0xc60000ba92b436bc165fd48d803bce95a099ab67", "name": "FRAS", "fullName": "Frasindo Rent", "decimals": 8 }
-    
+    { "addr": "0xc60000ba92b436bc165fd48d803bce95a099ab67", "name": "FRAS", "fullName": "Frasindo Rent", "decimals": 8 },
+    { "addr": "0x5cee1264a7692c04aff5f0292f7a0f5dbfef9094", "name": "NAUT", "fullName": "Nautcoins", "decimals": 8 }
+
   ],
   "defaultPair": { "token": "CDEX", "base": "ETH" }
 }
