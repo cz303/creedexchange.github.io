@@ -3,7 +3,7 @@
 
 # Creedexchange  updated to newforkdelta.github.io
 
-<img src = "Image URL"https://newforkdelta.github.io/images/title.png/>
+<img src = "https://newforkdelta.github.io/images/title.png"/>
 
 Creedexchange is a decentralized Ethereum Token Exchange with the most ERC20 listings of any exchange.
 
