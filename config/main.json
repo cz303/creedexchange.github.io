@@ -33,9 +33,19 @@
   "tokens": [
     { "addr": "0x006bea43baa3f7a6f765f14f10a1a1b08334ef45", "name": "STX", "fullName": "Stox", "decimals": 18 },
     { "addr": "0x009e864923b49263c7f10d19b7f8ab7a9a5aad33", "name": "FKX", "fullName": "Knoxstertoken", "decimals": 18 },
-    { "addr": "0x00a0cbe98e4d110b0fa82646152d77babf2951d0", "name": "EETHER", "fullName": "EETHER", "decimals": 18 },
+    { "addr": "0xc42209aCcC14029c1012fB5680D95fBd6036E2a0", "name": "PPP", "fullName": "PayPie", "decimals": 18 },
     { "addr": "0x00c4b398500645eb5da00a1a379a88b11683ba01", "name": "EXC", "fullName": "Eximchain Token", "decimals": 18 },
     { "addr": "0x013a06558f07d9e6f9a00c95a33f3a0e0255176b", "name": "BALI", "fullName": "BALI COIN", "decimals": 18 },
+    { "addr": "0xe3818504c1b32bf1557b16c238b2e01fd3149c17", "name": "PLR", "fullName": "PILLAR", "decimals": 18 },
+    { "addr": "0x41dbecc1cdc5517c6f76f6a6e836adbee2754de3", "name": "MTN", "fullName": "MedToken", "decimals": 18 },
+    { "addr": "0xdd974d5c2e2928dea5f71b9825b8b646686bd200", "name": "KNC", "fullName": "KyberNetwork", "decimals": 18 },
+    { "addr": "0x8f3470a7388c05ee4e7af3d01d8c722b0ff52374", "name": "VERI", "fullName": "Veritaseum", "decimals": 18 },
+    { "addr": "0x26e75307fc0c021472feb8f727839531f112f317", "name": "C20", "fullName": "Crypto20", "decimals": 18 },
+    { "addr": "0xd4fa1460f537bb9085d22c7bccb5dd450ef28e3a", "name": "PPT", "fullName": "Populous", "decimals": 8 },
+    { "addr": "0xc98e0639c6d2ec037a615341c369666b110e80e5", "name": "EXMR", "fullName": "EXMR", "decimals": 8 },
+    { "addr": "0xd49ff13661451313ca1553fd6954bd1d9b6e02b9", "name": "ELEC", "fullName": "AsiaElectricity","decimals": 18 },
+    { "addr": "0xc14830e53aa344e8c14603a91229a0b925b0b262", "name": "PXT", "fullName": "Token Populous", "decimals": 8 },
+    { "addr": "0xd26114cd6ee289accf82350c8d8487fedb8a0c07", "name": "OMG", "fullName": "Token OmiseGO", "decimals": 18 },
     { "addr": "0x57488fcc3dc72edb0a4c06a356c2c43c08bdfb42", "name": "CDEX", "fullName": "Creedex", "decimals": 18 }
   ],
   "defaultPair": { "token": "CDEX", "base": "ETH" }
