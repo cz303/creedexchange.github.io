@@ -51,7 +51,7 @@
     { "addr": "0xc60000ba92b436bc165fd48d803bce95a099ab67", "name": "FRAS", "fullName": "Frasindo Rent", "decimals": 8 },
     { "addr": "0x5cee1264a7692c04aff5f0292f7a0f5dbfef9094", "name": "NAUT", "fullName": "Nautcoins", "decimals": 18 },
     { "addr": "0x57220ecb5fd1e04efe2b43bbdb33d79853d8a748", "name": "TCM", "fullName": "timecash", "decimals": 18 },
-    { "addr": "0x78ff5886fa33b238c236127f6459f6db52cfca1e", "name": "OPDEX", "fullName": "Token OpenDEX", "decimals": 18 },
+    { "addr": "0x1B92BbB754776611f9DD2E28E54F7B3b1F735D78", "name": "PCB", "fullName": "Token PetrocoinBr ", "decimals": 18 },
     { "addr": "0x29ff3479e15b6ceede73858e169983afb83d36a6", "name": "FXBC", "fullName": "FXBARTERCOIN", "decimals": 18 }
 
   ],
