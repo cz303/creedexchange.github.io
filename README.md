@@ -9,7 +9,7 @@
 
 
 # What  newforkdelta
-Creedexchange currently acts as an open source, updated interface for EtherDelta's smart contract with an active and public development team. Although newforkdelta started as a fork of EtherDelta, considerable development time has been put towards a new token listing system, order book, API, and front-end UI all of which are at different stages of development and can be tracked on [GitHub]https://github.com/NEWFORKDELTA). 
+newforkdelta currently acts as an open source, updated interface for EtherDelta's smart contract with an active and public development team. Although newforkdelta started as a fork of EtherDelta, considerable development time has been put towards a new token listing system, order book, API, and front-end UI all of which are at different stages of development and can be tracked on [GitHub]https://github.com/NEWFORKDELTA). 
 
 
 # How does newforkdelta change  Work? 
