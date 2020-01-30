@@ -17,7 +17,7 @@
   "gasTrade": 250000,
   "gasOrder": 250000,
   "minOrderSize": 0.001,
-  "socketServer": "https://api.creedexchange.github.io",
+  "socketServer": "https://api.forkdelta.com/",
   "userCookie": "creedexchange",
   "eventsCacheCookie": "creedexchange.github.io_eventsCache",
   "ordersCacheCookie": "creedexchange.github.io_ordersCache",
